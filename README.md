@@ -1,4 +1,4 @@
-# A GameBoy-inspired project created in Godot 4
+# A GameBoy-inspired Asteroids game created in Godot 4
 
 ## [Play Here!](https://paladino-nahuel.itch.io/)
 
