@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx165svfomrxf"
-path="res://.godot/imported/gameboy_space_bg.png-2c216f3af23c236683ca01e80d395795.ctex"
+path="res://.godot/imported/gameboy_space_bg.png-687b94085209549a83a16be325468691.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/gameboy_space_bg.png"
-dest_files=["res://.godot/imported/gameboy_space_bg.png-2c216f3af23c236683ca01e80d395795.ctex"]
+source_file="res://Assets/Environment/gameboy_space_bg.png"
+dest_files=["res://.godot/imported/gameboy_space_bg.png-687b94085209549a83a16be325468691.ctex"]
 
 [params]
 
