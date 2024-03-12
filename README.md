@@ -1,6 +1,6 @@
 # A GameBoy-inspired Asteroids game created in Godot 4
 
-## [Play Here!](https://paladino-nahuel.itch.io/)
+## [Play Here!](https://paladino-nahuel.itch.io/gameboy-asteroids)
 
 Created in a week, control a small spaceship and destroy the asteroids for points.
 
