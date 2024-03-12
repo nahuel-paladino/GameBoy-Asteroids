@@ -2,7 +2,7 @@
 
 ## [Play Here!](https://paladino-nahuel.itch.io/)
 
-Created in a little over a week, control a small spaceship and destroy the asteroids for points.
+Created in a week, control a small spaceship and destroy the asteroids for points.
 
 Programming, art, and design by Nahuel Paladino
 
