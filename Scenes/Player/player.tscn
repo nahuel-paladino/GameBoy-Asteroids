@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3f4u07vqne0j"]
+
+[ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_4xjti"]
+[ext_resource type="Texture2D" uid="uid://c3ov3v75gmg1g" path="res://Assets/Player/gameboy_ship.png" id="1_anyh6"]
+
+[node name="Player" type="CharacterBody2D"]
+texture_filter = 1
+motion_mode = 1
+script = ExtResource("1_4xjti")
+acceleration = 0.5
+friction = 0.025
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_anyh6")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, -5, -3, -1, -5, 5, 5, 5, 3, -1)
+
+[node name="BulletMarker" type="Marker2D" parent="."]
+position = Vector2(0, -3)
+
+[node name="FireDelay" type="Timer" parent="."]
+wait_time = 0.15
+one_shot = true

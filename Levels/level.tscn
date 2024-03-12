@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://cetwb8hyptvio"]
+
+[ext_resource type="Texture2D" uid="uid://cx165svfomrxf" path="res://Assets/gameboy_space_bg.png" id="1_d6fbj"]
+[ext_resource type="Script" path="res://Levels/level.gd" id="1_sl12s"]
+[ext_resource type="PackedScene" uid="uid://c3f4u07vqne0j" path="res://Scenes/Player/player.tscn" id="2_dftk4"]
+[ext_resource type="PackedScene" uid="uid://b61hnr7t4ku5l" path="res://Scenes/Enemies/asteroid.tscn" id="4_16l07"]
+[ext_resource type="PackedScene" uid="uid://dooqfxsptcbb" path="res://Spawner.tscn" id="5_iobvn"]
+
+[node name="Level" type="Node2D"]
+process_mode = 1
+script = ExtResource("1_sl12s")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 160.0
+offset_bottom = 144.0
+texture = ExtResource("1_d6fbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="StartPosition" type="Marker2D" parent="."]
+position = Vector2(80.5, 72)
+
+[node name="Player" parent="." instance=ExtResource("2_dftk4")]
+
+[node name="Asteroid" parent="." instance=ExtResource("4_16l07")]
+visible = false
+position = Vector2(80, 24)
+
+[node name="Spawner" parent="." instance=ExtResource("5_iobvn")]

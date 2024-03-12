@@ -1,0 +1,16 @@
+res://UI/hud.tscn
+res://Assets/UI/Themes/GameBoy.tres
+res://UI/hud.gd
+res://Spawner.tscn
+res://game_manager.gd
+res://Spawner.gd
+res://Scenes/Enemies/asteroid.tscn
+res://Scenes/Enemies/asteroid.gd
+res://game.tscn
+res://UI/pause_menu.tscn
+res://Levels/level.tscn
+res://Scenes/Player/player.tscn
+res://Scenes/Player/bullet.tscn
+res://Assets/UI/Themes/Style/button_bg_focused_style_box_flat.tres
+res://UI/pause_menu.gd
+res://Scenes/Player/player.gd

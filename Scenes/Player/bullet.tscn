@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://pjemxl8bjs2"]
+
+[ext_resource type="Script" path="res://Scenes/Player/bullet.gd" id="1_bvmqw"]
+[ext_resource type="Texture2D" uid="uid://cly71sa5mxhl0" path="res://Assets/Player/gameboy_bullet.png" id="2_egui7"]
+
+[node name="Bullet" type="Area2D"]
+texture_filter = 1
+script = ExtResource("1_bvmqw")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_egui7")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, -2, 0, -2, 1, 0, 0, 2, -1, 0)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0, -2.86102e-07)
+scale = Vector2(0.1, 0.2)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
